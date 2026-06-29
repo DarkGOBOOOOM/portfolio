@@ -110,6 +110,20 @@ h2 {
     color: #2c3e50;
 }
 
+.project-link {
+    display: inline-block;
+    margin-top: 12px;
+    color: #4ca1af;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.project-link:hover {
+    color: #2c3e50;
+}
+
 /* Social Links(Contact Section) */
 #contact {
     text-align: center;
