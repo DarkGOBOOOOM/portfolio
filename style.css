@@ -1,0 +1,220 @@
+/* General Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth; 
+}
+
+/*for navigation bar*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background: #2c3e50;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4ca1af;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #4ca1af;
+}
+
+/* Header / Hero Section */
+header {
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Section & Content Styling */
+section {
+    padding: 60px 10%;
+}
+
+h2 {
+    border-bottom: 3px solid #4ca1af;
+    display: inline-block;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    color: #2c3e50;
+}
+
+/* Project Grid & Cards */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-left: 6px solid #4ca1af;
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+/* Social Links(Contact Section) */
+#contact {
+    text-align: center;
+    background-color: #ecf0f1;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.social-icon {
+    padding: 12px 25px;
+    background: #34495e;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background: #4ca1af;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(76, 161, 175, 0.4);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #2c3e50;
+    color: white;
+    font-size: 0.9rem;
+}
+
+
+/* Skills Section Styling */
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-category {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-top: 4px solid #4ca1af;
+}
+
+.skill-category h3 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+/* Upcoming Project Badge */
+.project-card.upcoming {
+    position: relative;
+    border: 1px dashed #4ca1af; 
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #f39c12;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/*Back to Top button*/
+.back-to-top {
+    position: fixed;        
+    bottom: 30px;           
+    right: 30px;           
+    background: #4ca1af;  
+    color: white;
+    width: 50px;           
+    height: 50px;
+    text-decoration: none;
+    display: flex;          
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;     
+    font-size: 1.8rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 9999;          
+    transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+    background: #2c3e50;
+    transform: translateY(-5px); 
+}
